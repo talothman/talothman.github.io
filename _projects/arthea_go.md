@@ -1,5 +1,14 @@
 ---
-date:   2019-03-31 09:00:00 -0400
+title: "Arthea Go - 6DOF VR Model Manipulator"
+description: "Powerful 6DOF model manipulation tool implemented with a 3DOF controller for Oculus Go standalone VR headset."
+date: 2019-03-31 09:00:00 -0400
+tags:
+  - virtual reality
+  - VR
+  - Oculus Go
+  - 3D manipulation
+  - Unity
+  - interaction design
 ---
 
 <video autoplay loop muted playsinline size="#half">

@@ -5,6 +5,13 @@ author: Talal Alothman
 date:   2017-03-11 21:00:00 -0400
 description: Tracking academic papers can sometimes be a convoluted process. Use trello to simplify your workflow.
 image: ../assets/img/workflow/sad.gif
+tags:
+  - academic research
+  - productivity
+  - workflow
+  - Trello
+  - thesis writing
+  - literature review
 ---
 
 One of the main issues that I struggle with as I write my thesis is keeping track of the literature that I am exposed to and will eventually end up reading and citing. While I'd like to recall every word I read (hello NZT-48), my brain hasn't reached the ability to do that. Exploring memory palaces and other techniques of memorization might help initially, but indexing everything you read is not an easy task. While I'd like to spend a couple of years working on exploring memorization techniques that could help me instantly recall a quote from a paper I previously read, I would rather spend that time finishing this thesis and graduating, hopefully to a job.

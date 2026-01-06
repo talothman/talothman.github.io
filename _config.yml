@@ -1,18 +1,56 @@
 # Blog settings
 permalink: /blog/:title
 
+# Site settings (SEO)
+title: Talal Alothman - VR/AR/XR Developer & Researcher
+tagline: Dispatches on immersive technology, spatial computing, and interaction design
+description: >-
+  Talal Alothman is a software developer and researcher specializing in
+  VR, AR, XR, spatial user interfaces, and immersive technology.
+  Exploring interaction design for virtual reality, augmented reality,
+  and holographic displays.
+lang: en
 
-# My variables
+# Author (structured for SEO)
+author:
+  name: Talal Alothman
+  url: https://talothman.github.io
+  twitter: talalhalothman
+
+# Social links (for Schema.org structured data)
+social:
+  name: Talal Alothman
+  links:
+    - https://twitter.com/talalhalothman
+    - https://github.com/talothman
+    - https://www.linkedin.com/in/talothman
+
+# My variables (for templates)
 name: Dispatches/أيفادات
 eng-name: Dispatches
 ara-name: إيفادات
-description: Talal Alothman. Talking about VR AR XR Spatial User Interfaces!
-author: Talal Alothman
+
+# Default image for social sharing
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-default.png
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Talal Alothman
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: default
 
 # File management
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
-
+exclude: ["README.md", "LICENSE", "Gemfile", "Gemfile.lock", "node_modules", "vendor"]
 
 plugins:
   - jekyll-seo-tag
@@ -30,10 +68,10 @@ kramdown:
   hard_wrap: false
 highlighter: rouge
 
-# SEO
+# SEO / Twitter Cards
 twitter:
   username: talalhalothman
-  card: summary
+  card: summary_large_image
 
 # Sitemap
 url: https://talothman.github.io

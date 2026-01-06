@@ -1,5 +1,15 @@
 ---
-date:   2018-12-31 09:00:00 -0400
+title: "Arthea PC - Collaborative VR Model Viewer"
+description: "Collaborative 3D model viewer with robust manipulation interactions for desktop VR headsets like Oculus Rift and HTC Vive."
+date: 2018-12-31 09:00:00 -0400
+tags:
+  - virtual reality
+  - VR
+  - Oculus Rift
+  - HTC Vive
+  - collaborative
+  - 3D manipulation
+  - Unity
 ---
 
 <video autoplay loop muted playsinline size="#half">

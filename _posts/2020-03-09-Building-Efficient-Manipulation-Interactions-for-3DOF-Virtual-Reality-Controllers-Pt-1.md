@@ -5,6 +5,15 @@ author: Talal Alothman
 date:   2020-03-09 09:00:00 -0400
 description: Developing 3DOF manipulation is hard. This post proposes an efficient, user friendly implementation as a solution.
 image: ../assets/gif/rotate.gif
+tags:
+  - virtual reality
+  - VR
+  - interaction design
+  - 3DOF controller
+  - Oculus Go
+  - 3D manipulation
+  - UX design
+  - Unity
 ---
 
 # User Adoption

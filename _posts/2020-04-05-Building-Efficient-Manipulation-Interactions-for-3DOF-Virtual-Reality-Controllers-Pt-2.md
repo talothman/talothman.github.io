@@ -5,6 +5,15 @@ author: Talal Alothman
 date:   2020-04-05 12:00:00 -0400
 description: Developing 3DOF manipulation is hard. This post proposes an efficient, user friendly implementation as a solution.
 image: ../assets/gif/scale.gif
+tags:
+  - virtual reality
+  - VR
+  - interaction design
+  - 3DOF controller
+  - Oculus Go
+  - 3D manipulation
+  - scaling
+  - UX design
 ---
 
 [In part one]({{ site.baseurl }}{% post_url 2020-03-09-Building-Efficient-Manipulation-Interactions-for-3DOF-Virtual-Reality-Controllers-Pt-1 %}), I discussed some of the challenges and solutions for building selection, translation, and rotation interactions for 3DOF controllers. In this post, I will further elaborate on the scale interaction in addition to methods of transitioning between the different interaction modes.
