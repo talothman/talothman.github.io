@@ -8,6 +8,12 @@ layout: projects
         {% assign sorted = site.projects | sort: 'date' | reverse %}
         {% for project in sorted %}
         <li>
+            {%- comment -%}
+              Link the title to the project's own page. Without this the detail
+              pages are orphans -- reachable only via sitemap.xml, with no
+              internal link and no anchor text pointing at them.
+            {%- endcomment -%}
+            <h2 class="project__title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
             {{project.content}}
         </li>
         {% endfor %}

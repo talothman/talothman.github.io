@@ -52,6 +52,26 @@
 </script>
 {% endif %}
 
+{% if page.layout == 'project' %}
+<!-- Projects carried no structured data at all. CreativeWork ties each one to
+     the same Person entity, which is the point: these are portfolio pieces
+     whose value is establishing what this person has built. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "{{ page.title | escape }}",
+  "description": "{{ page.description | strip_html | escape }}",
+  "url": "{{ page.url | absolute_url }}",
+  "creator": { "@id": "{{ site.url }}/#person" },
+  "author": { "@id": "{{ site.url }}/#person" },
+  "isPartOf": { "@id": "{{ site.url }}/#website" }{% if page.date %},
+  "dateCreated": "{{ page.date | date_to_xmlschema }}"{% endif %}{% if page.tags %},
+  "keywords": "{{ page.tags | join: ', ' }}"{% endif %}
+}
+</script>
+{% endif %}
+
 {% if page.layout == 'post' %}
 <!-- BlogPosting Schema for posts -->
 <script type="application/ld+json">
