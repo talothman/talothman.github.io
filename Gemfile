@@ -8,17 +8,22 @@ ruby '>= 3.0' if ENV['CI'] || ENV['GITHUB_ACTIONS']
 # This ensures local builds match GitHub Pages behavior
 gem 'github-pages', '~> 232', group: :jekyll_plugins
 
-# Plugins (included in github-pages but explicit for clarity)
+# Plugins (already pulled in by github-pages; listed for clarity).
+# Deliberately unversioned: github-pages pins these to exact versions
+# (currently jekyll-sitemap 1.4.0, jekyll-seo-tag 2.8.0). Adding our own
+# constraint here duplicates that pin and makes the bundle unresolvable the
+# day github-pages bumps a plugin past it. Let github-pages be the only pin.
 group :jekyll_plugins do
-  gem 'jekyll-sitemap', '~> 1.4'
-  gem 'jekyll-seo-tag', '~> 2.8'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
 end
 
-# Windows and JRuby timezone support
-platforms :mingw, :x64_mingw, :mswin, :jruby do
+# Windows and JRuby timezone support.
+# :windows replaces the deprecated :mingw/:x64_mingw/:mswin triple.
+platforms :windows, :jruby do
   gem 'tzinfo', '>= 1', '< 3'
   gem 'tzinfo-data'
 end
 
 # Performance booster for watching directories on Windows
-gem 'wdm', '~> 0.1', platforms: [:mingw, :x64_mingw, :mswin]
+gem 'wdm', '~> 0.1', platforms: [:windows]
