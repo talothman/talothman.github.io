@@ -186,7 +186,7 @@ While interaction in our case was focused on one single model at a time, ideally
 
 Overall, the benefit of modern holographic displays are clear; allow for immersive-like displaying of 3D content that is not limited to a single user at a time and does not require the need to wear, often neck pain inducing, headsets. There's great value in that. Interaction remains experimental with approaches like the one above attempting to adopt and mix different interactions techniques for the sake of better user experience. It should be clear from the above discussion that interaction with holographic displays does not fit neatly into the near-field/far-field binaries. It would seem that there is a middle ground or even a different paradigm that could lean into interactions common in more typical 2D displays. Regardless, the space is ripe with opportunities to experiment and that's pretty exciting.
 
-If the post above is interesting to you, I'd love to talk. Hit me up on [twitter](https://twitter.com/talalhalothman)!
+If the post above is interesting to you, I'd love to talk. Hit me up on [X](https://x.com/talalhalothman)!
 
 ## References
 

@@ -18,13 +18,14 @@ lang: en
 author:
   name: Talal Alothman
   url: https://talothman.github.io
+  # Key must stay `twitter` -- it is jekyll-seo-tag's schema, not a display name.
   twitter: talalhalothman
 
 # Social links (for Schema.org structured data)
 social:
   name: Talal Alothman
   links:
-    - https://twitter.com/talalhalothman
+    - https://x.com/talalhalothman
     - https://github.com/talothman
     - https://www.linkedin.com/in/talothman
 
@@ -71,7 +72,9 @@ kramdown:
   hard_wrap: false
 highlighter: rouge
 
-# SEO / Twitter Cards
+# Card metadata for X. The `twitter` key and the twitter:card / twitter:site
+# meta tags it emits keep their original names -- that is still the spec X
+# reads, and renaming them would break link previews.
 twitter:
   username: talalhalothman
   card: summary_large_image
