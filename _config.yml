@@ -2,8 +2,11 @@
 permalink: /blog/:title
 
 # Site settings (SEO)
-title: Talal Alothman - VR/AR/XR Developer & Researcher
-tagline: Dispatches on immersive technology, spatial computing, and interaction design
+# `title` is also used as og:site_name, so it is the name Google associates with
+# the whole domain. Keep it as the plain personal name; the descriptor lives in
+# `tagline`, which jekyll-seo-tag appends to make "Talal Alothman | VR/AR/XR ...".
+title: Talal Alothman
+tagline: VR/AR/XR Developer & Researcher
 description: >-
   Talal Alothman is a software developer and researcher specializing in
   VR, AR, XR, spatial user interfaces, and immersive technology.
@@ -50,7 +53,7 @@ defaults:
 
 # File management
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE", "Gemfile", "Gemfile.lock", "node_modules", "vendor"]
+exclude: ["README.md", "LICENSE", "CLAUDE.md", "Gemfile", "Gemfile.lock", "node_modules", "vendor"]
 
 plugins:
   - jekyll-seo-tag

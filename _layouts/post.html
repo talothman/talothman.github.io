@@ -10,11 +10,13 @@ layout: default
     	<h1>{{ page.title }}</h1>
     </div>
     <div class="post__date">
-    	<p>{{ page.date | date: '%B %-d, %Y' }}</p>
+    	<p>By <span class="post__author">{{ page.author | default: site.author.name }}</span> &middot; {{ page.date | date: '%B %-d, %Y' }}</p>
     </div>
+    {% if page.tags and page.tags != empty %}
     <div class="post__meta">
-    	<p>{{ tags_content }}</p>
+    	<p>{{ page.tags | join: ', ' }}</p>
     </div>
+    {% endif %}
     <div class="post__content">
         {{ content }}
     </div>

@@ -10,13 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	
-    {% if page.title %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ site.name }}</title>
-    {% endif %}
-
-    <meta name="description" content="{{ site.description }}">
+    {% comment %}
+      title and description are emitted by the seo tag near the end of this head.
+      Do not add them here: a second <title>/<meta description> makes Google
+      discard the tag and guess the page name from the visible <h1> instead.
+      (Use a Liquid comment, not an HTML one -- Liquid still executes tags
+      inside <!-- --> and would render the seo block twice.)
+    {% endcomment %}
 
     <link rel="icon" href="/assets/img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">

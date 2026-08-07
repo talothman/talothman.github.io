@@ -71,12 +71,17 @@ ul {
 	h1 {
 		font-size: 2em;
 		margin-bottom: 0;
-		
+
 		.arabic{
 			font-size: 1.25em;
 			font-family: 'Mirza', cursive;
 			font-display: swap;
 		}
+	}
+	&__byline {
+		margin: 2px 0 0 0;
+		font-size: 0.9em;
+		opacity: 0.75;
 	}
 	ul {
 		margin-top: 10px;

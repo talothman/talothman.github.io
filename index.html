@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Talal Alothman - VR/AR/XR Developer & Researcher
 description: >-
-  Personal blog and portfolio of Talal Alothman, a software developer
+  Personal site of Talal Alothman, a software developer and researcher
   specializing in VR, AR, XR, spatial user interfaces, and immersive technology.
   Exploring interaction design for virtual reality and augmented reality.
 ---
 
 <div class="header">
-    <h1>{{ site.eng-name | append: ' / ' }}<span class="arabic">{{site.ara-name }}</span> </h1>
+    <div class="header__brand">
+        <h1>{{ site.eng-name | append: ' / ' }}<span class="arabic">{{site.ara-name }}</span> </h1>
+        <p class="header__byline">{{ site.author.name }} &mdash; {{ site.tagline | escape }}</p>
+    </div>
     <ul>
         {% for item in site.data.navigation %}
         <li>
