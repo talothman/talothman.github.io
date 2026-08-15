@@ -1,8 +1,22 @@
 ---
 layout: default
+title: Blog
+description: >-
+  Writing by Talal Alothman on VR, AR, XR, spatial user interfaces, and
+  interaction design for immersive technology and holographic displays.
 ---
 
+{% comment %}
+  This page had no title, no description and no <h1>: an untitled bare list.
+  The back link matches the convention in _layouts/post.html and projects.html.
+{% endcomment %}
+
+<div class="post__back">
+    <a href="/">&lt;-- home</a>
+</div>
+
 <div class="blog">
+    <h1>Blog Posts by Talal Alothman</h1>
     <ul>
         {% for post in site.posts %}
         <li>
